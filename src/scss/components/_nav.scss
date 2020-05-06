@@ -1,0 +1,47 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1.5em;
+  background: #f7f7f7;
+
+  &__logo {
+    @extend %flex-center;
+    font-size: 2rem;
+    margin-right: 1.5em;
+  }
+  &__left,
+  &__form {
+    @extend %flex-center;
+  }
+
+  &__search {
+    border: 1px var(--primary-color) solid;
+    border-radius: 2rem;
+    width: 30rem;
+    padding: 1.4em 1.5em;
+
+    &::placeholder,
+    &::-webkit-input-placeholder,
+    &::-moz-placeholder {
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: #555;
+      font-family: inherit;
+    }
+  }
+  &__btn {
+    border-radius: 50%;
+    padding: 1em;
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+
+    &--icon {
+      @extend %flex-center;
+    }
+    &--submit {
+      margin-left: -4.2em;
+    }
+  }
+}

@@ -5,10 +5,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Movie Liblary</title>
+  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-  <h1>Yeet</h1>
+  <nav class="nav">
+    <div class="nav__left">
+      <h1 class="nav__logo">
+        <span class="material-icons">
+          theaters
+        </span>
+        Movie Finder</h1>
+
+
+      <form id="form" class="nav__form" action="#">
+        <input type="text" class="nav__search" autofocus placeholder="Search a movie">
+        <button type="submit" class="nav__btn nav__btn--submit"><span class="material-icons nav__btn--icon">
+            send
+          </span></button>
+      </form>
+    </div>
+
+    <div class="nav__right">
+      <button class="nav__btn"><span class="material-icons nav__btn--icon">
+          favorite
+        </span></button>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+    </div>
+  </main>
   <script src="../src/JS/index.js"></script>
 </body>
 

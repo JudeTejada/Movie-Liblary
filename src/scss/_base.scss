@@ -1,0 +1,27 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  color: #111;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --white: #FFFFF;
+  --black: #000000;
+  --primary-color: #263238;
+  --secondary-color: #5c656a;
+  --tertiary-color: #98a8af;
+}
+
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 140rem;
+}
