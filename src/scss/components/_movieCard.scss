@@ -1,4 +1,5 @@
 .movie {
+  cursor: pointer;
   transition: all 0.4s cubic-bezier(0.17, 0.84, 0.44, 1) !important;
   &__title {
     font-size: 2rem;
