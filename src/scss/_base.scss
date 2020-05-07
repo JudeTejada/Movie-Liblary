@@ -11,7 +11,7 @@ body {
   --black: #000000;
   --primary-color: #263238;
   --secondary-color: #5c656a;
-  --tertiary-color: #98a8af;
+  --tertiary-color: #444444;
 }
 
 %flex-center {
@@ -20,6 +20,11 @@ body {
   justify-content: center;
 }
 
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 main {
   width: 100%;
   margin: 0 auto;

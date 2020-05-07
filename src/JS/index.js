@@ -57,10 +57,11 @@ const movieController = async (id, fromMenu = false) => {
     state.movie = new Movie(id);
 
     //prepare the ui
+    clearUI();
 
     //send a request
     try {
-      state.movie.getMovie();
+      await state.movie.getMovie();
 
       movieView.renderMovie(state.movie);
     } catch (err) {}

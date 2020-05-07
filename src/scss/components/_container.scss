@@ -16,4 +16,9 @@
     @extend %flex-center;
     justify-content: space-between;
   }
+  &__moviePage {
+    margin: 5em auto;
+    width: 100%;
+    max-width: 110rem;
+  }
 }

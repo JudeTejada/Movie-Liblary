@@ -12,12 +12,13 @@ export default class Movie {
         `${PROXY}http://www.omdbapi.com/?apikey=${API_KEY}&i=${this.id}&type=movie&plot=full`
       );
 
+      this.ratings = res.data.Ratings;
       this.title = res.data.Title;
       this.genres = res.data.Genre;
       this.plot = res.data.Plot;
       this.img = res.data.Poster;
       this.imdbRating = res.data.imdbRating;
-      this.ratinggs = res.data.Ratings;
+      this.genres = res.data.Genre;
       this.language = res.data.Language;
       this.runtime = res.data.Runtime;
       this.releasedDate = res.data.Released;

@@ -16,7 +16,19 @@
   }
 
   &__main {
-    color: var(--white);
+    color: #fff;
     background: var(--primary-color);
+  }
+
+  &__back {
+    margin-top: 2.5em;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    font-size: 1.3rem;
+
+    span {
+      font-size: 2rem;
+      margin-right: 0.3em;
+    }
   }
 }
