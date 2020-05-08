@@ -4,8 +4,9 @@
 
 ------
 
-[Thumbnail](/thumbnail1.png)
+![](thumbnail1.png)
 
+![](thumbnail2.png)
 
 
 ![](C:\Users\PC\Pictures\photo2.jpg)
