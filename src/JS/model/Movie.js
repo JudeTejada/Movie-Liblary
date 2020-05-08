@@ -17,6 +17,7 @@ export default class Movie {
       this.genres = res.data.Genre;
       this.plot = res.data.Plot;
       this.img = res.data.Poster;
+      this.director = res.data.Director;
       this.imdbRating = res.data.imdbRating;
       this.genres = res.data.Genre;
       this.language = res.data.Language;

@@ -1,7 +1,10 @@
+@import "./components/modern_reset";
 @import "./base";
-
+@import "./components/mainPage";
+@import "./components/loader";
 @import "./components/nav";
 @import "./components/container";
 @import "./components/movieCard";
 @import "./components/button";
 @import "./components/movie";
+@import "./components/favorites";

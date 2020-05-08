@@ -1,0 +1,21 @@
+.container__home {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+
+  flex-direction: column;
+  margin-top: 10em;
+  &--title {
+    color: var(--primary-color);
+    font-size: 5.6rem;
+    font-weight: 500;
+  }
+  &--desc {
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: var(--secondary-color);
+    line-height: 1.6;
+  }
+}

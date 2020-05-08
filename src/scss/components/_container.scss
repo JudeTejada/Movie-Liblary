@@ -1,4 +1,7 @@
 .container {
+  @media only screen and (max-width: $bp-medium) {
+    padding: 0 2em;
+  }
   &__query {
     font-size: 2.3rem;
     font-weight: 400;

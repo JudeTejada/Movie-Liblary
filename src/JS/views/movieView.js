@@ -1,21 +1,30 @@
 import { elements } from "./base";
 
-const liGenre = (genre) => `<li>${genre}</li>`;
+const createLi = (data) => `<li>${data}</li>`;
 
 const displayGenre = (genre) => {
   const genres = Array.from(genre);
 
-  const markup = `${genres.map((genre) => liGenre(genre)).join("")}`;
+  const markup = `${genres.map((genre) => createLi(genre)).join("")}`;
 
   return markup;
 };
+const getFirstLanguage = (lang) => {
+  const language = Array.from(lang);
 
-export const renderMovie = (movie) => {
+
+  
+  return language[0]
+ 
+}
+
+export const renderMovie = (movie, isFavorite) => {
+
   //check if there's movie
   if (movie) {
     let markup = `
     <div class="container__moviePage moviePage">
-    <div class="flex-between">
+    <div class="moviePage__flex">
         <div class="col-1">
               <figure class="moviePage__image">
                 <img class="moviePage__photo" src="${movie.img}" alt="${
@@ -26,15 +35,39 @@ export const renderMovie = (movie) => {
 
         <div class="col-2">
         <h1 class="moviePage__title">${movie.title}</h1>
-        <div class="flex-between">
-        
-        </div>
 
-        <ul class="moviePage__genres">
+          <ul class="moviePage__details hide-mobile">
+                <li class="moviePage__detail">
+                <span class="material-icons">calendar_today</span>
+
+                    ${movie.releasedDate}
+                </li>
+
+                <li class="moviePage__detail">
+                <span class="material-icons">alarm</span>
+                    ${movie.runtime} min
+                </li>
+                <li class="moviePage__detail">
+                <span class="material-icons">person</span>
+                    ${movie.director}
+               </li>
+
+                <li class="moviePage__detail">
+                <span class="material-icons">language</span>
+                    ${getFirstLanguage(movie.language.split(','))}
+               </li>
+               
+              
+          </ul>
+     
+
+        <ul>
           <h3 class="moviePage__subheading">
           The Genres
           </h3>
+          <div class="moviePage__details">
          ${displayGenre(movie.genres.split(","))}
+         <div>
         </ul>
 
 
@@ -47,15 +80,17 @@ export const renderMovie = (movie) => {
       <div class="flex-between">
         <button class="btn btn__main">IMDB ${movie.imdbRating}</button>
         <button class="btn btn__main btn__main--save">
-        <span class="material-icons">favorite_border</span></button>
+        <span class="material-icons icon-favorite">      
+        ${isFavorite ? "favorite" : "favorite_border"}</span></button>
       </div>
       </div>
 </div>
 
 
-      <button class="btn btn__back">   <span class="material-icons">
-      arrow_back
-      </span> Back</button>
+      <button class="btn btn__back">  
+       <span class="material-icons">keyboard_backspace</span>
+       Go back
+       </button> 
       </div>
     `;
 

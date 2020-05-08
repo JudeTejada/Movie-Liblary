@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Movie Liblary</title>
-  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -14,7 +14,7 @@
   <nav class="nav">
     <div class="nav__left">
       <h1 class="nav__logo">
-        <span class="material-icons">
+        <span class="material-icons nav__icon--logo">
           theaters
         </span>
         Movie Finder</h1>
@@ -28,10 +28,13 @@
       </form>
     </div>
 
-    <div class="nav__right">
-      <button class="nav__btn"><span class="material-icons nav__btn--icon">
-          favorite
-        </span></button>
+    <div class="nav__right hide">
+      <div class="nav__favorites">
+        <button class="nav__btn nav__btn--panel"><span class="material-icons nav__btn--icon">
+            favorite
+          </span></button>
+      </div>
+      <div class="favorites"></div>
     </div>
   </nav>
 
