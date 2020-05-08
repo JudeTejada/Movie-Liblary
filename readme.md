@@ -4,7 +4,7 @@
 
 ------
 
-![](C:\Users\PC\Pictures\photo 1.jpg)
+[Thumbnail](/thumbnail1.png)
 
 
 
