@@ -1,12 +1,18 @@
 ## Movie Library  Project  using JavaScript
 
-[Check It Live Here](https://brave-yalow-b8f9ca.netlify.com/)  
+[Check It Live Here](https://moviefinder19.netlify.app/)  
 
 ------
 
+![](C:\Users\PC\Pictures\photo 1.jpg)
 
 
-### In order to use this project
+
+![](C:\Users\PC\Pictures\photo2.jpg)
+
+
+
+**In** order to use this project
 
 - Create an Account in the IMDB Site  [link](https://www.omdbapi.com/)  
 
@@ -19,7 +25,7 @@
 
   
 
-Getting Started**
+**Getting Started**
 
 Install the dependencies
 
