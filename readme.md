@@ -15,7 +15,7 @@
 
 **In** order to use this project
 
-- Create an Account in the IMDB Site  [link](https://www.omdbapi.com/)  
+- Create an Account in the OMDB Site  [link](https://www.omdbapi.com/)  
 
 - Create a config.js file at public/src and paste your proxy and APIKEY
  ```js
