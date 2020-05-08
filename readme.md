@@ -17,9 +17,8 @@
 
 - Create an Account in the IMDB Site  [link](https://www.omdbapi.com/)  
 
-- Create a config.js file and paste the code
-
-- ```js
+- Create a config.js file at public/src and paste your proxy and APIKEY
+ ```js
   export const API_KEY = YOUR APIKEY;
   export const PROXY = PROXY;
   ```
