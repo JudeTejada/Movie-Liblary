@@ -3,22 +3,9 @@
 [Check It Live Here](https://moviefinder19.netlify.app/)  
 
 
+![](img/thumbnail1.png)
 
-
-
-**In** order to use this project
-
-- Create an Account in the IMDB Site  [link](https://www.omdbapi.com/)  
-
-- Create a config.js file and paste the code
-
-- ```js
-  export const API_KEY = YOUR APIKEY;
-  export const PROXY = PROXY;
-  ```
-
-  
-
+![](img/thumbnail2.png)
 **Getting Started**
 
 Install the dependencies
