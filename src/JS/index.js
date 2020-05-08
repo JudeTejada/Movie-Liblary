@@ -55,7 +55,7 @@ const searchController = async (type, page) => {
     searchView.clearInput();
 
     try {
-      console.log("Getting Ready");
+
 
       //fetch a request
       await state.search.getResults(page);

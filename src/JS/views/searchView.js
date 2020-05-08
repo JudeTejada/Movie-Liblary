@@ -22,12 +22,11 @@ const renderMovie = (result) => {
   const markup =
     result.Poster === "N/A"
       ? `<figure class="movie" data-id="${result.imdbID}">
-   <div class="movie__noimg"> No Image🤡</div>
-    <h3 class="movie__title">${result.Title}</h3>
-  </figure>`
+        <div class="movie__noPoster">No Image🤡</div>
+          <h3 class="movie__title">${result.Title}</h3>
+        </figure>`
       : `<figure class="movie" data-id="${result.imdbID}">
     <img src="${result.Poster}" alt="${result.Title}"  class="movie__img"/>
-    <figcaption class="movie__title">${result.Title}</figcaption>
    </figure>`;
 
   movieContainer.insertAdjacentHTML("beforeend", markup);
@@ -81,6 +80,6 @@ export const renderResults = (search) => {
 
   //display all movie related to query
   search.result.Search.forEach((movie) => renderMovie(movie));
-  console.log(search);
+
   renderPagination(search.page, search.result.totalResults);
 };

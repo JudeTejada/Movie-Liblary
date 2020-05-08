@@ -18,6 +18,7 @@ const getFirstLanguage = (lang) => {
  
 }
 
+
 export const renderMovie = (movie, isFavorite) => {
 
   //check if there's movie
@@ -26,11 +27,15 @@ export const renderMovie = (movie, isFavorite) => {
     <div class="container__moviePage moviePage">
     <div class="moviePage__flex">
         <div class="col-1">
-              <figure class="moviePage__image">
-                <img class="moviePage__photo" src="${movie.img}" alt="${
-      movie.title
-    }"/>
-              </figure>
+        ${  movie.img === "N/A"
+        ? `<figure class="movie__image">
+               <div class="moviePage__noPoster">No Image🤡</div>
+            </figure>`
+        : `<figure class="moviePage__image">
+              <img src="${movie.img}" alt="${movie.title}" />
+          </figure>`}
+        
+          
         </div>
 
         <div class="col-2">

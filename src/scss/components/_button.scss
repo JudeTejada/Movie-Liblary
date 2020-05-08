@@ -9,6 +9,7 @@
   padding: 0.7em 2em;
   background: none;
   border-radius: 5rem;
+  transition: all 0.3s;
 
   &__pagination,
   &__backToMain {
@@ -37,4 +38,8 @@
       margin-right: 0.3em;
     }
   }
+  &:hover {
+    transform: translateY(-2px) scale(1.05);
+  }
+
 }

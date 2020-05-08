@@ -9,7 +9,6 @@
 
     @media only screen and (max-width: 600px) {
       display:block;
-
   }
 
   }
@@ -21,15 +20,33 @@
       height:50rem;
     }
   }
+  
   &__image {
     width: 30rem;
     margin-right: 6em;
     @media only screen and (max-width: $bp-small) {
       width:100%;
       margin-right:0;
-      
+    
     }
   }
+ &__noPoster{
+    background: var(--primary-color);
+    width: 30rem;
+    height:40rem;
+    margin-right: 6em;
+    font-size: 1.7rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (max-width: $bp-small) {
+      width:100%;
+      margin-right:0;
+    
+    }
+    }
+  
   &__title {
     position: relative;
     z-index: 50;

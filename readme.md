@@ -2,23 +2,17 @@
 
 [Check It Live Here](https://moviefinder19.netlify.app/)  
 
-------
 
-![](thumbnail1.png)
-
-![](thumbnail2.png)
-
-
-![](C:\Users\PC\Pictures\photo2.jpg)
 
 
 
 **In** order to use this project
 
-- Create an Account in the OMDB Site  [link](https://www.omdbapi.com/)  
+- Create an Account in the IMDB Site  [link](https://www.omdbapi.com/)  
 
-- Create a config.js file at public/src and paste your proxy and APIKEY
- ```js
+- Create a config.js file and paste the code
+
+- ```js
   export const API_KEY = YOUR APIKEY;
   export const PROXY = PROXY;
   ```

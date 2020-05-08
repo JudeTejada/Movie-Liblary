@@ -24,6 +24,16 @@
    
   }
 
+  &__noPoster{
+    height:40rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: var(--primary-color);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
   img {
     height: 40rem;
     width: 100%;
@@ -31,6 +41,7 @@
     object-fit: cover;
     filter: brightness(50%);
   }
+
 
   &:hover,
   &:active {
