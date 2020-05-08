@@ -38,3 +38,27 @@ export const renderMainPage = () => {
 
   elements.container.insertAdjacentHTML("afterbegin", markup);
 };
+
+
+export const renderErrorPage = (msg, query) => {
+  const markup = `
+  <div class="container__error">
+    <h1>Sorry!</h1>
+    <p>There were no results found for <strong>${query}</strong></p>
+    <button class="btn btn__backToMain">Go Back to Main Page</button>
+  </div>
+  `
+
+  elements.container.insertAdjacentHTML('afterbegin', markup)
+}
+
+export const renderErrorRequest = () => {
+  const markup = `<div class="container__error">
+  <h1>Something Went wrong  with the request</h1>
+  
+  <button class="btn btn__backToMain">Go Back to Main Page</button>
+  </div>`
+  elements.container.insertAdjacentHTML('afterbegin', markup)
+
+
+}

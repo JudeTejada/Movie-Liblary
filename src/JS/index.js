@@ -12,6 +12,8 @@ import {
   addLoader,
   clearLoader,
   renderMainPage,
+  renderErrorPage,
+  renderErrorRequest
 } from "./views/base";
 //GLobal state of the app\
 
@@ -40,7 +42,9 @@ const searchController = async (type, page) => {
         //render the pages
         searchView.renderResults(state.search);
       } catch (err) {
-     
+        clearUI();
+        renderErrorPage('There were no result for', state.search.query)
+
       }
     }
   } else if (type === "used") {
@@ -59,7 +63,8 @@ const searchController = async (type, page) => {
       //render movies on page
       searchView.renderResults(state.search);
     } catch (err) {
-      console.log(err);
+          clearUI();
+      renderErrorRequest()
     }
   }
 };
@@ -83,7 +88,8 @@ const movieController = async (id, fromMenu = false) => {
         fromMenu
       );
     } catch (err) {
-      console.log(err);
+      clearUI();
+      renderErrorRequest()
     }
 
     //display
@@ -156,7 +162,7 @@ elements.container.addEventListener("click", (e) => {
   const buttonFavorite = e.target.closest(".btn__main--save");
   const buttonBack = e.target.matches(".btn__back");
   const movie = e.target.closest(".movie");
-
+  const buttonBackToMain = e.target.matches('.btn__backToMain');
   //check if pagination was clicked
   if (buttonPagination) {
     const page = parseInt(buttonPagination.dataset.page, 10);
@@ -176,6 +182,10 @@ elements.container.addEventListener("click", (e) => {
 
   if (buttonFavorite) {
     favoriteController();
+  }
+  if(buttonBackToMain){
+    clearUI();
+    renderMainPage();
   }
 });
 

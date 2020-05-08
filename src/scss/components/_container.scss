@@ -24,4 +24,20 @@
     width: 100%;
     max-width: 110rem;
   }
+  &__error{
+    margin-top:10em;
+    text-align:center;
+    margin: 10em auto;
+    h1{
+      color: var(--primary-color);
+      font-size: 5.6rem;
+      font-weight: 500;
+    }
+    p{
+      font-size: 1.7rem;
+
+      color: var(--secondary-color);
+      line-height: 1.6;
+    }
+  }
 }

@@ -10,9 +10,15 @@
   background: none;
   border-radius: 5rem;
 
-  &__pagination {
+  &__pagination,
+  &__backToMain {
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
+  }
+
+  &__backToMain{
+    margin: 0 auto;
+    margin-top:1.5em;
   }
 
   &__main {
