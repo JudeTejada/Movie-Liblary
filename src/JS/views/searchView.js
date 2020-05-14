@@ -27,6 +27,7 @@ const renderMovie = (result) => {
         </figure>`
       : `<figure class="movie" data-id="${result.imdbID}">
     <img src="${result.Poster}" alt="${result.Title}"  class="movie__img"/>
+    <h3 class="movie__title">${result.Title}</h3>
    </figure>`;
 
   movieContainer.insertAdjacentHTML("beforeend", markup);

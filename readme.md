@@ -14,8 +14,6 @@ Install the dependencies
 npm install
 ```
 
-
-
 Run the code in the command line
 
 ```
